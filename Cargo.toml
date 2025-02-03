@@ -14,6 +14,9 @@ keywords = ["macro", "lazy", "static"]
 categories = [ "no-std", "rust-patterns", "memory-management" ]
 exclude = [".github"]
 
+[lib]
+crate-type = ["rlib", "dylib"]
+
 [dependencies.spin]
 version = "0.9.8"
 default-features = false

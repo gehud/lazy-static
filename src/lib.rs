@@ -95,7 +95,6 @@ This crate provides one cargo feature:
 */
 
 #![doc(html_root_url = "https://docs.rs/lazy_static/1.5.0")]
-#![no_std]
 
 #[cfg(doctest)]
 #[macro_use]
@@ -110,7 +109,7 @@ doctest!("../README.md");
 pub mod lazy;
 
 #[doc(hidden)]
-pub use core::ops::Deref as __Deref;
+pub use std::ops::Deref as __Deref;
 
 #[macro_export(local_inner_macros)]
 #[doc(hidden)]
